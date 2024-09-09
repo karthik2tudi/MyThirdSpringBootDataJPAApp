@@ -96,10 +96,6 @@ public class EmpService {
 		return empRepository.findByEadd(address);
 	}
 	
-//	public List<com.rt.entity.Employee> getEmpdDetailswhoseSalMore(int grossSal){
-//		return empRepository.getGrossSalGreaterThan(grossSal);
-//	}
-	
 	public List<com.rt.entity.Employee> getEmpdDetailswhoseSalMore(int grossSal,int netSal){
 		return empRepository.findByGrossSaleryGreaterThanEqualAndNetSaleryGreaterThanEqual(grossSal,netSal);
 	}

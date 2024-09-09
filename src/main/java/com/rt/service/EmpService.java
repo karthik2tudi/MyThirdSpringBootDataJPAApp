@@ -30,7 +30,7 @@ public class EmpService {
 			com.rt.entity.Employee save = empRepository.save(entity);
 			return save.getEid();
 		}
-		return 12;
+		return 15;
 	}
 
 	/**

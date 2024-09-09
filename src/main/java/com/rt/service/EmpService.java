@@ -13,6 +13,7 @@ import com.rt.exception.EmployeeNotFoundException;
 import com.rt.repository.EmpRepository;
 
 @Service
+@Transactional
 public class EmpService {
 
 	@Autowired
@@ -113,13 +114,13 @@ public class EmpService {
 		return empRepository.getEmpDetailsSalGreaterNative(salery);
 	}
 	
-	@Transactional
+	
 	public void updateEmpDetails(int incsalery,String location) {
 		empRepository.UpdateEmp(incsalery, location);
 	}
 
 	
-	@Transactional
+	
 	public void DeleteEmp(String location) {
 		empRepository.DeleteEmpByNativeQuery(location);
 	}

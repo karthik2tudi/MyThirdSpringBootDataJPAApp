@@ -30,8 +30,8 @@ public class EmpService {
 			com.rt.entity.Employee save = empRepository.save(entity);
 			return save.getEid();
 		}
-		return 15;
-	}
+		return 30;
+}
 
 	/**
 	 * method is used to fetch all employee details from the DB by calling the

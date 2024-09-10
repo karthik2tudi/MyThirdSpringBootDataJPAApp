@@ -31,7 +31,7 @@ public class EmpService {
 			return save.getEid();
 		}
 		return 30;
-	}
+}
 
 	/**
 	 * method is used to fetch all employee details from the DB by calling the
